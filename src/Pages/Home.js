@@ -6,7 +6,9 @@ const home = () => {
         <div className="home">
            <Menu />
            <div className="data-container">
-           Landing Page
+           <div className="txt">
+               Landing page
+           </div>
            </div>
         </div>
     );
