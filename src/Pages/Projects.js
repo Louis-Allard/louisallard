@@ -1,11 +1,12 @@
 import React from 'react';
 import Menu from '../Components/Menu';
+import Title from '../Components/Title';
 
 const Projects = () => {
     return (
         <div className="projects">
             <Menu />
-            <h1>Projects</h1>
+            <Title text="Mes projets" />
         </div>
     );
 };
