@@ -6,9 +6,9 @@ const Title = (props) => {
         <div className="title">
             <Menu />
             <div className="parent">
-                <h1 className="child1">{ props.text } </h1>
-                <h1 className="child1 child2">{ props.text }</h1>
->             </div>
+                <h1 className="child1">{ props.text }</h1>
+                <h1 className="child1 child2">{ props.text }</h1>&nbsp;
+            </div>
         <hr />
     </div>
     );

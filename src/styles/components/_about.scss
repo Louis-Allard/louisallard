@@ -1,33 +1,27 @@
 .about {
-    .parent {
-        position: relative;
-        margin: auto;
+    color: $color-3;
+    .content {
+        margin-top: 300px;
+        text-align: justify;
     }
-    .child1 {
-        position: absolute;
+    .cards {
         width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        opacity: 0.7;
-        font-size: 10rem;
-        font-weight: bolder;
-        color: $color-4;
+        display: inline-flex;
+        margin: 10px auto;
     }
-    .child2 {
-        z-index: 1;
-        margin: 57px;
-        font-size: 7rem;
-       color: $color-2;
-
-    }
-    hr {
+    .card {
         width: 30%;
-        height: 20px;
-        color: $color-2;
-        background-color: $color-2;
         border: none;
-        position: absolute;
-        margin: 227px 31%;
+        margin : 0 5px 0 0px;
+        border: none;
+
+        img {
+            width: 33%;
+            margin: auto;
+        }
+
+        p {
+            font-size: 1rem;
+        }
     }
 }
