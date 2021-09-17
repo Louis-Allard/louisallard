@@ -33,4 +33,46 @@
         transition: all 500ms ease;
         background-color: #59beda;
     }
+    .skills {
+        margin-top: 20px;
+        text-align: justify;
+        width: 100%;
+        display: inline-flex;
+        padding: 5px;
+        .myskills {
+            width: 45%;
+        }
+        .skillsico {
+            padding-left: 190px;
+            width: 50%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr [col-start]);/* 4 columns */
+            grid-template-rows: repeat(4, 90px [col-start]);/* 4 rows */
+        
+            
+            .img {
+                width: 50px;
+                height: 50px;
+            }
+            
+            .el {
+                width: 80px;
+                height: 80px;
+                border: 1px solid grey;
+                border-radius: 10px;
+                text-align: center;
+                padding-top: 10px;
+                box-shadow: 3px 3px 0px #aaa;
+                cursor: pointer;
+            }
+            .el:hover {
+                border-radius: 15px;
+                -webkit-transition: all 500ms ease;
+                -moz-transition: all 500ms ease;
+                -ms-transition: all 500ms ease;
+                -o-transition: all 500ms ease;
+                transition: all 500ms ease;
+            }
+        }
+    }
 }
