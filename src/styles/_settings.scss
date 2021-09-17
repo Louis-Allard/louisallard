@@ -5,6 +5,7 @@ $font-1: "Roboto", sans-serif;
 $color-1: #f7f7f7;
 $color-2: #20c997;
 $color-3: #111418;
+$color-4: #e7e7e7;
 
 * {
   box-sizing: border-box;
@@ -28,4 +29,10 @@ a {
 }
 a:visited {
   color: $color-3;
+}
+
+h1 {
+  color: $color-2;
+  font-weight: bold;
+  font-size: 4rem;
 }

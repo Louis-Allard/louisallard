@@ -1,6 +1,6 @@
 import React from 'react';
 import Menu from '../Components/Menu';
-import { landing } from "./lng/fr";
+import { landing } from "../lng/fr.js";
 
 const home = () => {
     return (
