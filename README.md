@@ -7,6 +7,7 @@ ReactJS - JavaScript - SCSS
 ### Inspirations
 
 http://demo.harnishdesign.net/html/simone/index.html
+
 https://codepen.io/yemon/pen/dzgmxJ
 
 ### Contact
