@@ -12,8 +12,9 @@
     .card {
         width: 30%;
         border: none;
-        margin : 0 5px 0 0px;
-        border: none;
+        margin: auto;
+        border-radius: 10px;
+        padding-bottom: 3px;
 
         img {
             width: 33%;
@@ -23,5 +24,13 @@
         p {
             font-size: 1rem;
         }
+    }
+    .card:hover {
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        transition: all 500ms ease;
+        background-color: #59beda;
     }
 }

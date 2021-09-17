@@ -17,15 +17,15 @@ const About = () => {
             <div className="cards">
                 <div className="card">
                     <img src={ conseils } alt="conseils" />
-                    <p>{ aboutme.conseils }</p>
+                    <p dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(aboutme.conseils)}} />
                     </div>
                 <div className="card">
                 <img src={ expertise } alt="expertise" />
-                <p>{ aboutme.expertise }</p>
+                <p dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(aboutme.expertise )}} />
                 </div>
                 <div className="card">
                 <img src={ confiance } alt="confiance" />
-                <p>{ aboutme.confiance }</p>
+                <p dangerouslySetInnerHTML={{__html: DOMPurify.sanitize( aboutme.confiance)}} />
                 </div>
             </div>
         </div>
