@@ -1,5 +1,5 @@
 import React from 'react';
-import DOMPurify from "dompurify";
+import DOMPurify from 'dompurify';
 import Menu from '../Components/Menu';
 import Title from '../Components/Title';
 import { aboutme } from '../lng/fr.js';
