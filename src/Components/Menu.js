@@ -1,12 +1,14 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import photo from "../assets/moi.jpeg";
+import photo from "../assets/moi2.jpeg";
 
 const Menu = () => {
     return (
             <nav className="menu">
                 <div className="main-menu">
-                <img  className="pic" src={photo} alt="moi" />
+                    <div className="pic-container">
+                <img className="pic" src={photo} alt="moi" />
+                </div>
             <ul>
                 <li>
                 <NavLink exact to="/" activeClassName="nav-active">
