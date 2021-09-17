@@ -4,9 +4,10 @@ Nouveau site personnel
 
 ReactJS - JavaScript - SCSS 
 
-### Ressource
+### Inspirations
 
 http://demo.harnishdesign.net/html/simone/index.html
+https://codepen.io/yemon/pen/dzgmxJ
 
 ### Contact
 
