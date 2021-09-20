@@ -25,8 +25,16 @@ const Menu = () => {
                         <span className="nav-text">
                             A propos
                             </span>
-                        </NavLink>
+                </NavLink>
                 </li>
+                <li className="has-subnav">
+                <NavLink exact to="/cv" activeClassName="nav-active">
+                        <i class="fa fa-laptop fa-2x"></i>
+                        <span className="nav-text">
+                            Mon parcours
+                            </span>
+                </NavLink>
+                </li>                
                 <li className="has-subnav">
                 <NavLink exact to="/projects" activeClassName="nav-active">
                        <i class="fa fa-tasks fa-2x"></i>

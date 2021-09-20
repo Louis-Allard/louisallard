@@ -1,0 +1,64 @@
+.cv {
+    .data-container {
+        margin-top: 300px;
+        hr {
+            background-color: $color-4;
+        }
+        .whoami {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+            grid-auto-rows: minmax(100px, auto);
+        }
+        .desc {
+            margin-top: 30px;
+        }
+        img {
+            width: 25%;
+            margin: 5px auto;
+            overflow: hidden;
+            -webkit-border-radius: 80px;
+            -moz-border-radius: 80px;
+            border-radius: 80px;
+            border: 3px;
+            border-color: $color-2;
+            float: left;
+        }
+        .contact {
+            margin-top: 30px;
+            margin-left: 15%;
+            position: absolute;
+        }
+        .parcours {
+            text-align: left;
+            margin-top: 30px;
+            .title {
+                text-transform: uppercase;
+                background-color: $color-2;
+                font-weight: bolder;
+                padding: 5px;
+                color: $color-1;
+                margin-top: 10px;
+            }
+            ul {
+                margin-top: 20px;
+            }
+            li {
+                list-style-type: none;
+                font-weight: bold;
+                font-size: 1rem;
+                line-height: 30px;
+                &::before {
+                    content: "→ "; /* caractère UTF-8 */
+                }
+                
+
+                .details {  
+                    font-size: 0.9rem;
+                    margin-left: 10px;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+}
