@@ -1,0 +1,31 @@
+.project {
+    width: 98%;
+    height: 350px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 3px;
+    margin-bottom: 5px;
+    background-color: $color-4;
+
+    img {
+        width: 80%;
+        height: 90px;
+    }
+
+    .name {
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: center;
+        color: $color-2;
+    }
+
+    .desc {
+        font-size: 1rem;
+        text-align: justify;
+        margin-top: 3px;
+    }
+    &:hover {
+        background-color: $color-1;
+        cursor: pointer;
+    }
+}
