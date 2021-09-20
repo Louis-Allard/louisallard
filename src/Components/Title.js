@@ -9,7 +9,7 @@ const Title = (props) => {
                 <h1 className="child1">{ props.text }</h1>
                 <h1 className="child1 child2">{ props.text }</h1>&nbsp;
             </div>
-        <hr />
+        <div className="hr" />
     </div>
     );
 };

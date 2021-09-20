@@ -21,7 +21,7 @@
        color: $color-2;
 
     }
-    hr {
+    .hr {
         width: 30%;
         height: 20px;
         color: $color-2;
@@ -29,5 +29,10 @@
         border: none;
         position: absolute;
         margin: 227px 31%;
+        transition: width 5s, transform 5s;
+        &::after {
+            width: 5%;
+            content: '';
+        }
     }
 }
