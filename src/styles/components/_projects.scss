@@ -3,6 +3,6 @@
         margin-top: 300px;
         display: grid;
         grid-template-columns: repeat(4, 1fr [col-start]);/* 4 columns */
-        grid-template-rows: repeat(4, 90px [col-start]);/* 4 rows */
+        grid-template-rows: repeat(2, 1fr [col-start]);/* 4 rows */
     }
 }
