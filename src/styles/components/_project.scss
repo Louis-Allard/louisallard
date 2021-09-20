@@ -4,6 +4,8 @@
     border: 1px solid grey;
     border-radius: 5px;
     padding: 3px;
+    margin-bottom: 5px;
+    background-color: $color-4;
 
     img {
         width: 80%;
@@ -21,5 +23,9 @@
         font-size: 1rem;
         text-align: justify;
         margin-top: 3px;
+    }
+    &:hover {
+        background-color: $color-1;
+        cursor: pointer;
     }
 }
