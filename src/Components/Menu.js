@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHome, faPassport,faBriefcase, faCode, faCubes } from '@fortawesome/free-solid-svg-icons'
 import { NavLink } from 'react-router-dom';
 import photo from "../assets/moi2.jpeg";
 
@@ -12,7 +14,7 @@ const Menu = () => {
             <ul>
                 <li>
                 <NavLink exact to="/" activeClassName="nav-active">
-                        <i class="fa fa-home fa-2x"></i>
+                        <FontAwesomeIcon icon={faHome} className="fa-2x" />
                         <span className="nav-text">
                             Accueil
                         </span>
@@ -21,7 +23,7 @@ const Menu = () => {
                 </li>
                 <li className="has-subnav">
                 <NavLink exact to="/about" activeClassName="nav-active">
-                        <i class="fa fa-camera-retro fa-2x"></i>
+                <FontAwesomeIcon icon={faPassport} className="fa-2x" />
                         <span className="nav-text">
                             A propos
                             </span>
@@ -29,7 +31,7 @@ const Menu = () => {
                 </li>
                 <li className="has-subnav">
                 <NavLink exact to="/cv" activeClassName="nav-active">
-                        <i class="fa fa-laptop fa-2x"></i>
+                <FontAwesomeIcon icon={faBriefcase} className="fa-2x" />
                         <span className="nav-text">
                             Mon parcours
                             </span>
@@ -37,7 +39,7 @@ const Menu = () => {
                 </li>                
                 <li className="has-subnav">
                 <NavLink exact to="/projects" activeClassName="nav-active">
-                       <i class="fa fa-tasks fa-2x"></i>
+                <FontAwesomeIcon icon={faCode} className="fa-2x" />
                         <span className="nav-text">
                             Mes projets
                         </span>
@@ -46,7 +48,7 @@ const Menu = () => {
                 </li>
                 <li className="has-subnav">
                 <NavLink exact to="/blog" activeClassName="nav-active">
-                       <i class="fa fa-list fa-2x"></i>
+                <FontAwesomeIcon icon={faCubes} className="fa-2x" />
                         <span className="nav-text">
                             Mon blog
                         </span>
