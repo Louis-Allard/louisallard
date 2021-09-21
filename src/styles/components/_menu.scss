@@ -1,18 +1,15 @@
-@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 .menu {
     .fa-2x {
-        font-size: 3em;
-    }
-    .fa {
+        font-size: 0.8em;
         position: relative;
         display: table-cell;
         width: 60px;
-        height: 36px;
+        height: 30px;
         text-align: center;
         vertical-align: middle;
         font-size: 20px;
+        padding-bottom: 8px;
     }
-
     .main-menu:hover,
     nav.main-menu.expanded {
         width: 250px;
