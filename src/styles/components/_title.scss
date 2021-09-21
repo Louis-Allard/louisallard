@@ -15,12 +15,59 @@
         color: $color-4;
     }
     .child2 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
         z-index: 1;
         margin: 57px;
         font-size: 7rem;
-       color: $color-2;
+        color: $color-2;
 
     }
+    .child1:first-of-type {
+        animation: showup 7s infinite;
+    }
+    .child1:last-of-type {
+        width: 100%;
+        animation: reveal 7s infinite;
+    }
+    @keyframes showup {
+        0% {
+            opacity: 0;
+        }
+        20% {
+            opacity: 1;
+        }
+        80% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    @keyframes reveal {
+        0% {
+            opacity: 0;
+            width: 0px;
+        }
+        20% {
+            opacity: 1;
+            width: 0px;
+        }
+        30% {
+            width: 100%;
+        }
+        80% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            width: 100%;
+        }
+    }
+
     .hr {
         width: 30%;
         height: 20px;
@@ -29,10 +76,5 @@
         border: none;
         position: absolute;
         margin: 227px 31%;
-        transition: width 5s, transform 5s;
-        &::after {
-            width: 5%;
-            content: '';
-        }
     }
 }
