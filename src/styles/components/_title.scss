@@ -1,3 +1,4 @@
+@media (min-width: 900px) {
 .title {
     .parent {
         position: relative;
@@ -76,5 +77,35 @@
         border: none;
         position: absolute;
         margin: 227px 31%;
+    }
+}
+}
+
+@media (max-width: 900px) and (min-width: 600px) {
+    .title {
+        .hr {
+            display: none;
+        }
+        .child1 {
+            display: none;
+        }
+        .child2 {
+            font-size: 4rem;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .title {
+        .hr {
+            display: none;
+        }
+        .child1 {
+            display: none;
+        }
+        .child2 {
+            font-size: 2rem;
+            margin-left: 80px;
+        }
     }
 }
