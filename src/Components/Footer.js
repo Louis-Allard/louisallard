@@ -8,8 +8,8 @@ const Footer = () => {
            <div className="els">
                <p><FontAwesomeIcon icon={faAt} />: contact@louisallard.fr</p>
                <p><FontAwesomeIcon icon={faPhone} />: 07 67 82 69 67</p>
-               <p><FontAwesomeIcon icon={faUsers} />: <a href="https://www.linkedin.com/in/louis-allard-devweb/" target="_blank">Mon Linkedin</a></p>
-               <p><FontAwesomeIcon icon={faCodeBranch} />: <a href="https://github.com/Louis-Allard" target="_blank">Mon github</a></p>
+               <p><FontAwesomeIcon icon={faUsers} />: <a href="https://www.linkedin.com/in/louis-allard-devweb/" target="_blank" rel='noreferrer noopener'>Mon Linkedin</a></p>
+               <p><FontAwesomeIcon icon={faCodeBranch} />: <a href="https://github.com/Louis-Allard" target="_blank" rel='noreferrer noopener'>Mon github</a></p>
            </div>
         </div>
     );
