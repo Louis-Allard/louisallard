@@ -7,7 +7,7 @@ const Title = (props) => {
             <Menu />
             <div className="parent">
                 <h1 className="child1">{ props.text }</h1>
-                <h1 className="child1 child2">{ props.text }</h1>&nbsp;
+                <h1 className="child2">{ props.text }</h1>&nbsp;
             </div>
         <div className="hr" />
     </div>
