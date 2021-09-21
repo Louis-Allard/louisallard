@@ -21,7 +21,7 @@ const Menu = () => {
                 </li>
                 <li className="has-subnav">
                 <NavLink exact to="/about" activeClassName="nav-active">
-                        <i class="fa fa-laptop fa-2x"></i>
+                        <i class="fa fa-camera-retro fa-2x"></i>
                         <span className="nav-text">
                             A propos
                             </span>
