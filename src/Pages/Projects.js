@@ -8,6 +8,7 @@ import p_mazerunner from '../assets/projetcs/p_mazerunner.png'
 import p_xeno from '../assets/projetcs/p_xeno.png'
 import p_trenois from '../assets/projetcs/p_td.png'
 import p_watcha from '../assets/projetcs/p_watcha.png'
+import Footer from '../Components/Footer';
 
 
 const Projects = () => {
@@ -23,6 +24,7 @@ const Projects = () => {
                     <Project src={ p_trenois } alt="project 5" title="Trenois Decamps" name="Trenois Decamps" desc="Trenois recrutement est un site internet realisé en 2013 pour le compte de l'entreprise Trenois Decamps. Malgré de légères modifications graphiques effectuées au cours de ces dernières années au niveau graphique, l'essentiel a été conservé.<br /><br /><p>Ce site internet a été réalisé en PHP.</p>" />      
                     <Project src={ p_watcha } alt="project 6" title="Watcha" name="Watcha" desc="Watcha utilise une API permettant de récupérer des données de films. Il permet de retrouver un film par son titre; cliquer sur un acteur renvoi à la liste de ses films.<br /><br /><p>Outre l'API, Watcha a été développé en React.JS.</p>" />                 
                 </div>
+                <Footer />
         </div>
     );
 };

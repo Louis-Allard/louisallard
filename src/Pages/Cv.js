@@ -3,6 +3,7 @@ import DOMPurify from 'dompurify';
 import Title from '../Components/Title';
 import photo from "../assets/moi2.jpeg";
 import { parcours } from '../lng/fr';
+import Footer from '../Components/Footer';
 
 const cv = () => {
     return (
@@ -60,6 +61,7 @@ Conception de sites internets dans le cadre des projets professionnels, r√©alis√
 
         </div>
       </div>
+      <Footer />
         </div>
     );
 };

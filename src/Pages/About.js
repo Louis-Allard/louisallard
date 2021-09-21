@@ -1,6 +1,7 @@
 import React from 'react';
 import DOMPurify from 'dompurify';
 import Menu from '../Components/Menu';
+import Footer from '../Components/Footer';
 import Title from '../Components/Title';
 import { aboutme } from '../lng/fr.js';
 import conseils from '../assets/about/conseils.png';
@@ -62,6 +63,7 @@ const About = () => {
                     <div className="el"><img src={react} alt="react" title="reactjs" /></div>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 };

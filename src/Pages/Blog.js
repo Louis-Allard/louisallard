@@ -1,6 +1,7 @@
 import React from 'react';
 import Menu from '../Components/Menu';
 import Title from '../Components/Title';
+import Footer from '../Components/Footer';
 import Post from '../Components/Post';
 import { blog } from '../lng/fr.js'
 
@@ -20,6 +21,7 @@ const Blog = () => {
             <Post title={ blog.title02 } content={ blog.content02 }  date={ blog.date02 } />
             <Post title={ blog.title01 } content={ blog.content01 }  date={ blog.date01 } />
             </div>
+            <Footer />
         </div>
     );
 };

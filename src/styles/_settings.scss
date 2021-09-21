@@ -6,6 +6,7 @@ $color-1: #f7f7f7;
 $color-2: #20c997;
 $color-3: #111418;
 $color-4: #e7e7e7;
+$color-5: #09a3cd;
 
 * {
   box-sizing: border-box;
@@ -36,4 +37,8 @@ h1 {
   color: $color-2;
   font-weight: bold;
   font-size: 4rem;
+}
+
+b {
+  color: $color-5;
 }
