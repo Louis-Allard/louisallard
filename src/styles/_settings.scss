@@ -7,6 +7,7 @@ $color-2: #20c997;
 $color-3: #111418;
 $color-4: #e7e7e7;
 $color-5: #09a3cd;
+$color-6: #fff;
 
 $margin-menu: 60px;
 
@@ -20,9 +21,28 @@ body {
   width: 95%;
   font-family: $font-1;
   color: $color-3;
-  background-color: $color-1;
+  //background-color: $color-1;
   font-size: 1.3rem;
+///
+  background: linear-gradient(-45deg,$color-6,$color-1,$color-4, grey);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+///
 }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 li {
   list-style-type: none;
 }
