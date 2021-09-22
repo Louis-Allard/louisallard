@@ -1,5 +1,7 @@
 import React from 'react';
 import DOMPurify from 'dompurify';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFilePdf } from '@fortawesome/free-solid-svg-icons'
 import Title from '../Components/Title';
 import photo from "../assets/moi2.jpeg";
 import { parcours } from '../lng/fr';
@@ -16,6 +18,7 @@ const cv = () => {
                     <div className="contact">
                         <p>Mon email ? contact@louisallard.fr</p>
                         <p>Où suis-je ? 59700 Marcq-en-Baroeul</p>
+                        <p><FontAwesomeIcon icon={faFilePdf} />&nbsp;<a href="https://cvdesignr.com/p/5e415998a2cbb" target="_blank" rel="noreferrer">Télécharger mon cv en pdf</a></p>
                     </div>
                 </div>
                 <div className="desc" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(parcours.desc) }}>
