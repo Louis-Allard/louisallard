@@ -25,3 +25,12 @@
         padding-left: 10px;
     }
 }
+
+@media (max-width: 900px) {
+    .post {
+        font-size: 1rem;
+        .title {
+            font-size: 1.3rem;
+        }
+    }
+}
