@@ -1,5 +1,4 @@
-@media (min-width: 900px) {
-    .about {
+.about {
         color: $color-3;
         margin-left: $margin-menu;
         .content {
@@ -77,18 +76,14 @@
             }
         }
     }
-}
 
 @media (max-width: 900px) and (min-width: 600px){
     .about {
-        margin-left: $margin-menu;
         .content {
-            margin-top: 20px;
-            text-align: justify;
+            margin-top: 0;
         }
         .card {
             width: 50%;
-            display: inline-flex;
             margin: 20px 0 20px 0;
             img {
                 width: 30%;
@@ -103,21 +98,10 @@
         }
         .skillsico {
             display: grid;
-            grid-template-columns: repeat(4, 1fr [col-start]); /* 4 columns */
-            grid-template-rows: repeat(4, 90px [col-start]); /* 4 rows */
-            .img {
-                width: 50px;
-                height: 50px;
-            }
-
+            grid-template-columns: repeat(3, 1fr [col-start]); 
+            grid-template-rows: repeat(5, 90px [col-start]); 
             .el {
-                width: 80px;
-                height: 80px;
-                border: 1px solid grey;
-                border-radius: 10px;
-                text-align: center;
-                padding-top: 10px;
-                box-shadow: 3px 3px 0px #aaa;
+                cursor: none;
             }
         }
     }
@@ -125,35 +109,20 @@
 
 @media (max-width: 600px){
     .about {
-        margin-left: $margin-menu;
+        font-size: 1rem;
         .content {
-            margin-top: 20px;
-            text-align: justify;
+            margin-top: 0;
         }
         .card {
            display: none;
         }
         .skills {
-            text-align: justify;
             margin-top: 20px;
-        }
-        .skillsico {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr [col-start]); /* 4 columns */
-            grid-template-rows: repeat(4, 90px [col-start]); /* 4 rows */
-            .img {
-                width: 50px;
-                height: 50px;
+            .myskills {
+                width: 100%;
             }
-
-            .el {
-                width: 80px;
-                height: 80px;
-                border: 1px solid grey;
-                border-radius: 10px;
-                text-align: center;
-                padding-top: 10px;
-                box-shadow: 3px 3px 0px #aaa;
+            .skillsico {
+                display: none;
             }
         }
     }

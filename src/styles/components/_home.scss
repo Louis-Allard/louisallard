@@ -93,3 +93,18 @@
         }
     }
 }
+
+@media (max-width: 500px) {
+    .home {
+    .data-container  {
+        margin-left: 20px;
+        text-align: center;
+        .txt {
+            font-size: 2rem;
+        }
+        .title {
+            font-size: 2.3rem;
+        }
+    }
+}
+}

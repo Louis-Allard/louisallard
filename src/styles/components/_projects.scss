@@ -27,7 +27,7 @@
             margin-top: 0;
             display: grid;
             grid-template-columns: repeat(2, 1fr [col-start]);
-            grid-template-rows: repeat(4, 1fr [col-start]);
+            grid-template-rows: repeat(3, 1fr [col-start]);
         }
     }
 }
