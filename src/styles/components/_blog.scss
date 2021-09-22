@@ -1,5 +1,14 @@
 .blog {
+    margin-left: $margin-menu;
     .data-container {
         margin-top: 300px;
+    }
+}
+
+@media (max-width: 900px) {
+    .blog {
+        .data-container {
+            margin-top: 0;
+        }
     }
 }

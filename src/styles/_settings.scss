@@ -8,6 +8,8 @@ $color-3: #111418;
 $color-4: #e7e7e7;
 $color-5: #09a3cd;
 
+$margin-menu: 60px;
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,7 +17,7 @@ $color-5: #09a3cd;
 }
 body {
   margin: 0.4rem auto;
-  max-width: 1296px;
+  width: 95%;
   font-family: $font-1;
   color: $color-3;
   background-color: $color-1;

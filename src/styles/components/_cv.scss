@@ -1,4 +1,5 @@
 .cv {
+    margin-left: $margin-menu;
     .data-container {
         margin-top: 300px;
         hr {
@@ -51,12 +52,65 @@
                 &::before {
                     content: "→ "; /* caractère UTF-8 */
                 }
-                
 
-                .details {  
+                .details {
                     font-size: 0.9rem;
                     margin-left: 10px;
                     font-weight: normal;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) and (min-width: 600px) {
+    .cv {
+        .data-container {
+            margin-top: 0;
+            text-align: justify;
+            font-size: 1.2rem;
+
+            hr {
+                background-color: $color-4;
+                margin: 10px 0 10px 0;
+            }
+            .whoami {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                .contact {
+                    margin: 100px 0 0 180px;
+                }
+                .desc {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .cv {
+        .data-container {
+            margin-top: 0;
+            text-align: justify;
+            font-size: 1rem;
+
+            hr {
+                background-color: $color-4;
+                margin: 10px 0 10px 0;
+            }
+            .whoami {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                .contact {
+                    margin: 0;
+                    text-align: left;
+                }
+                .desc {
+                    margin-top: 0;
+                }
+                img {
+                    display: none;
                 }
             }
         }

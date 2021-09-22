@@ -1,77 +1,128 @@
 .about {
-    color: $color-3;
-    .content {
-        margin-top: 300px;
-        text-align: justify;
-    }
-    .cards {
-        width: 100%;
-        display: inline-flex;
-        margin: 10px auto;
-    }
-    .card {
-        width: 30%;
-        border: none;
-        margin: auto;
-        border-radius: 10px;
-        padding-bottom: 3px;
-
-        img {
-            width: 33%;
+        color: $color-3;
+        margin-left: $margin-menu;
+        .content {
+            margin-top: 300px;
+            text-align: justify;
+        }
+        .cards {
+            width: 100%;
+            display: inline-flex;
+            margin: 10px auto;
+        }
+        .card {
+            width: 30%;
+            border: none;
             margin: auto;
-        }
+            border-radius: 10px;
+            padding-bottom: 3px;
 
-        p {
-            font-size: 1rem;
+            img {
+                width: 33%;
+                margin: auto;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+        .card:hover {
+            -webkit-transition: all 500ms ease;
+            -moz-transition: all 500ms ease;
+            -ms-transition: all 500ms ease;
+            -o-transition: all 500ms ease;
+            transition: all 500ms ease;
+            background-color: #59beda;
+        }
+        .skills {
+            margin-top: 20px;
+            text-align: justify;
+            width: 100%;
+            display: inline-flex;
+            padding: 5px;
+            .myskills {
+                width: 45%;
+            }
+            .skillsico {
+                padding-left: 190px;
+                width: 50%;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr [col-start]); /* 4 columns */
+                grid-template-rows: repeat(4, 90px [col-start]); /* 4 rows */
+
+                .img {
+                    width: 50px;
+                    height: 50px;
+                }
+
+                .el {
+                    width: 80px;
+                    height: 80px;
+                    border: 1px solid grey;
+                    border-radius: 10px;
+                    text-align: center;
+                    padding-top: 10px;
+                    box-shadow: 3px 3px 0px #aaa;
+                    cursor: pointer;
+                }
+                .el:hover {
+                    border-radius: 15px;
+                    -webkit-transition: all 500ms ease;
+                    -moz-transition: all 500ms ease;
+                    -ms-transition: all 500ms ease;
+                    -o-transition: all 500ms ease;
+                    transition: all 500ms ease;
+                }
+            }
         }
     }
-    .card:hover {
-        -webkit-transition: all 500ms ease;
-        -moz-transition: all 500ms ease;
-        -ms-transition: all 500ms ease;
-        -o-transition: all 500ms ease;
-        transition: all 500ms ease;
-        background-color: #59beda;
-    }
-    .skills {
-        margin-top: 20px;
-        text-align: justify;
-        width: 100%;
-        display: inline-flex;
-        padding: 5px;
-        .myskills {
-            width: 45%;
+
+@media (max-width: 900px) and (min-width: 600px){
+    .about {
+        .content {
+            margin-top: 0;
+        }
+        .card {
+            width: 50%;
+            margin: 20px 0 20px 0;
+            img {
+                width: 30%;
+            }
+            p {
+                font-size: 0.9rem;
+            }
+        }
+        .skills {
+            text-align: justify;
+            margin: 20px 0 20px 0;
         }
         .skillsico {
-            padding-left: 190px;
-            width: 50%;
             display: grid;
-            grid-template-columns: repeat(4, 1fr [col-start]);/* 4 columns */
-            grid-template-rows: repeat(4, 90px [col-start]);/* 4 rows */
-        
-            
-            .img {
-                width: 50px;
-                height: 50px;
-            }
-            
+            grid-template-columns: repeat(3, 1fr [col-start]); 
+            grid-template-rows: repeat(5, 90px [col-start]); 
             .el {
-                width: 80px;
-                height: 80px;
-                border: 1px solid grey;
-                border-radius: 10px;
-                text-align: center;
-                padding-top: 10px;
-                box-shadow: 3px 3px 0px #aaa;
-                cursor: pointer;
+                cursor: none;
             }
-            .el:hover {
-                border-radius: 15px;
-                -webkit-transition: all 500ms ease;
-                -moz-transition: all 500ms ease;
-                -ms-transition: all 500ms ease;
-                -o-transition: all 500ms ease;
-                transition: all 500ms ease;
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .about {
+        font-size: 1rem;
+        .content {
+            margin-top: 0;
+        }
+        .card {
+           display: none;
+        }
+        .skills {
+            margin-top: 20px;
+            .myskills {
+                width: 100%;
+            }
+            .skillsico {
+                display: none;
             }
         }
     }

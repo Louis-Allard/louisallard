@@ -78,3 +78,35 @@
         margin: 227px 31%;
     }
 }
+
+@media (max-width: 900px) and (min-width: 600px) {
+    .title {
+        height: 100px;
+        .hr {
+            display: none;
+        }
+        .child1 {
+            display: none;
+        }
+        .child2 {
+            margin: 0;
+            font-size: 4rem;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .title {
+        height: 100px;
+        .hr {
+            display: none;
+        }
+        .child1 {
+            display: none;
+        }
+        .child2 {
+            margin: 0;
+            font-size: 1.7rem;
+        }
+    }
+}
