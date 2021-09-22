@@ -21,6 +21,7 @@ import python from '../assets/about/python.png';
 import redux from '../assets/about/redux.png';
 import vuejs from '../assets/about/vuejs.png';
 import react from '../assets/about/react.png';
+import sass from '../assets/about/sass.png';
 
 
 const About = () => {
@@ -49,6 +50,7 @@ const About = () => {
                 <div className="skillsico">
                     <div className="el"><img src={html} alt="html" title="html" /></div>
                     <div className="el"><img src={css} alt="css" title="css"/></div>
+                    <div className="el"><img src={sass} alt="sass" title="sass"/></div>
                     <div className="el"><img src={bootstrap} alt="bootstrap" title="bootstrap" /></div>
                     <div className="el"><img src={linux} alt="linux" title="linux" /></div>
                     <div className="el"><img src={git} alt="git" title="git" /></div>

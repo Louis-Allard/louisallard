@@ -1,7 +1,7 @@
 .projects {
     margin-left: $margin-menu;
     .els {
-        margin-top: 300px;
+        margin-top: $margin-container;
         display: grid;
         grid-template-columns: repeat(4, 1fr [col-start]);
         grid-template-rows: repeat(2, 1fr [col-start]);

@@ -5,6 +5,7 @@ import About from './Pages/About';
 import Projects from './Pages/Projects';
 import Blog from './Pages/Blog';
 import Cv from './Pages/Cv';
+import Apropos from './Pages/Apropos';
 import NotFound from './Pages/NotFound';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/projects" exact component={Projects} />
           <Route path="/blog" exact component={Blog} />
           <Route path="/cv" exact component={Cv} />
+          <Route path="/apropos" exact component={Apropos} />
           <Route component={NotFound} />
         </Switch>
       </BrowserRouter>
