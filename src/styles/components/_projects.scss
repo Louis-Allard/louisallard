@@ -3,7 +3,31 @@
     .els {
         margin-top: 300px;
         display: grid;
-        grid-template-columns: repeat(4, 1fr [col-start]);/* 4 columns */
-        grid-template-rows: repeat(2, 1fr [col-start]);/* 4 rows */
+        grid-template-columns: repeat(4, 1fr [col-start]);
+        grid-template-rows: repeat(2, 1fr [col-start]);
+    }
+}
+
+
+@media (max-width: 900px) and (min-width: 600px) {
+    .projects {
+        .els {
+            margin-top: 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr [col-start]);
+            grid-template-rows: repeat(2, 1fr [col-start]);
+
+    }
+    }
+}
+
+@media (max-width: 600px) {
+    .projects {
+        .els {
+            margin-top: 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr [col-start]);
+            grid-template-rows: repeat(4, 1fr [col-start]);
+        }
     }
 }

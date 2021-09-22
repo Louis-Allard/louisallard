@@ -29,3 +29,16 @@
         cursor: pointer;
     }
 }
+
+@media (max-width: 900px) {
+    .project {
+        .name {
+            font-size: 0.9rem;
+        }
+    
+        .desc {
+            font-size: 0.8rem;
+        }
+
+    }
+}
