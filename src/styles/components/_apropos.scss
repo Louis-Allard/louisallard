@@ -3,3 +3,12 @@
         margin-top: $margin-container;
     }
 }
+
+@media (max-width: 900px) {
+    .apropos {
+        .data-container {
+            margin-top: 0;
+            margin-left: $margin-menu;
+        }
+    }
+}
