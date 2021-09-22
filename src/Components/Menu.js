@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faPassport,faBriefcase, faCode, faCubes } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faPassport,faBriefcase, faCode, faCubes, faUserSecret } from '@fortawesome/free-solid-svg-icons'
 import { NavLink } from 'react-router-dom';
 import photo from "../assets/moi2.jpeg";
 
@@ -54,7 +54,16 @@ const Menu = () => {
                         </span>
                     </NavLink>
                     
-                </li>                
+                </li>       
+                <li className="has-subnav">
+                <NavLink exact to="/apropos" activeClassName="nav-active">
+                <FontAwesomeIcon icon={faUserSecret} className="fa-2x" />
+                        <span className="nav-text">
+                            A propos de ce site
+                        </span>
+                    </NavLink>
+                    
+                </li>          
                 </ul>
                 </div>
         </nav>
