@@ -46,4 +46,51 @@ const blog = {
 const parcours = {
     desc: "Je suis ouvert a toute proposition professionnelle, prêt à saisir les opportunités les plus originales et créatives ou les projets devant répondre à un cahier des charges définis par mes collaborateurs."
 }
-export { landing, title, aboutme,  blog, parcours };
+
+const apropos = {
+    txt: "Ce site est réalisé avec les technologies suivantes:"
+}
+
+const moncv = {
+    titre_email: "Mon email ?",
+    email: "contact@louisallard.fr",
+    titre_addr: "Où suis-je ?",
+    addr: "59700 Marcq-en-Baroeul",
+    pdf: "Télécharger mon cv en pdf",
+    titre_xp: "Mes experiences",
+    titre_xpxeno: "2020 Développeur web",
+    xpxeno: "Développeur web chez Xeno: www.xenoapp.com. Conception de features sur les chatbox.",
+    titre_xpxenostage: "2019 Développeur web stagiaire",
+    xpxenostage: "Stagiaire en développement web chez Xeno.",
+    titre_as: "2016-2018 Gérant de Alfa Services",
+    as: "Entreprise de formations technique à destination des professionnels.",
+    titre_td: "2011-2015 Développeur web PHP",
+    td: "Développeur web PHP à Trenois Decamps. Création du site www.trenois.com, frontend et backend en php/mysql. Création également du site intranet et création du site de recrutement www.recrutement-trenois.com",
+    titre_nc: "2013-2017 Coordinateur de région",
+    nc: "Co-délégué régional pour un mouvement d'initiative citoyenne, dans la région Haut-de-France et correspondant presse.",
+    titre_cours: "2010-2012 Cours et dépannage Informatique.",
+    cours: "Cours d'informatique à domicile, à l'intention des seniors et dépannage chez les particuliers.",
+    titre_formations: "Mes formations",
+    titre_wcs: "2019 Développeur Web Javascript : Wild Code School de Lille",
+    wcs: "Apprentissage de Javascript, de Node.Js et de React.Js.Conception de sites internets dans le cadre des projets professionnels, réalisés en équipe via l'intégration des méthodes Agiles de gestion de projet."
+}
+
+const projects = {
+    project1: "",
+    project2: "",
+    project3: "",
+    project4: "",
+    project5: "",
+    project6: ""
+}
+
+const menu = {
+    accueil: "Accueil",
+    apropos: "A propos",
+    parcours: "Mon parcours",
+    projets: "Mes projets",
+    blog: "Mon blog",
+    site: "A propos de ce site"
+}
+
+export { landing, title, aboutme,  blog, parcours, apropos, moncv, menu };

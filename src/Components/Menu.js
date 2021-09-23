@@ -1,4 +1,5 @@
 import React from 'react';
+import { menu } from '../lng/fr.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faPassport,faBriefcase, faCode, faCubes, faUserSecret } from '@fortawesome/free-solid-svg-icons'
 import { NavLink } from 'react-router-dom';
@@ -16,7 +17,7 @@ const Menu = () => {
                 <NavLink exact to="/" activeClassName="nav-active">
                         <FontAwesomeIcon icon={faHome} className="fa-2x" />
                         <span className="nav-text">
-                            Accueil
+                           { menu.accueil }
                         </span>
                         </NavLink>
                   
@@ -25,7 +26,7 @@ const Menu = () => {
                 <NavLink exact to="/about" activeClassName="nav-active">
                 <FontAwesomeIcon icon={faPassport} className="fa-2x" />
                         <span className="nav-text">
-                            A propos
+                        { menu.apropos }
                             </span>
                 </NavLink>
                 </li>
@@ -33,7 +34,7 @@ const Menu = () => {
                 <NavLink exact to="/cv" activeClassName="nav-active">
                 <FontAwesomeIcon icon={faBriefcase} className="fa-2x" />
                         <span className="nav-text">
-                            Mon parcours
+                        { menu.parcours }
                             </span>
                 </NavLink>
                 </li>                
@@ -41,7 +42,7 @@ const Menu = () => {
                 <NavLink exact to="/projects" activeClassName="nav-active">
                 <FontAwesomeIcon icon={faCode} className="fa-2x" />
                         <span className="nav-text">
-                            Mes projets
+                        { menu.projets }
                         </span>
                     </NavLink>
                     
@@ -50,7 +51,7 @@ const Menu = () => {
                 <NavLink exact to="/blog" activeClassName="nav-active">
                 <FontAwesomeIcon icon={faCubes} className="fa-2x" />
                         <span className="nav-text">
-                            Mon blog
+                        { menu.blog }
                         </span>
                     </NavLink>
                     
@@ -59,7 +60,7 @@ const Menu = () => {
                 <NavLink exact to="/apropos" activeClassName="nav-active">
                 <FontAwesomeIcon icon={faUserSecret} className="fa-2x" />
                         <span className="nav-text">
-                            A propos de ce site
+                        { menu.site }
                         </span>
                     </NavLink>
                     

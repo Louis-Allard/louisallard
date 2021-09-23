@@ -1,5 +1,6 @@
 import React from 'react';
 import DOMPurify from 'dompurify';
+import { moncv } from '../lng/fr.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFilePdf } from '@fortawesome/free-solid-svg-icons'
 import Title from '../Components/Title';
@@ -16,9 +17,9 @@ const cv = () => {
                 <div className="pic">
                     <img src={ photo } alt="moi" />
                     <div className="contact">
-                        <p>Mon email ? contact@louisallard.fr</p>
-                        <p>Où suis-je ? 59700 Marcq-en-Baroeul</p>
-                        <p><FontAwesomeIcon icon={faFilePdf} />&nbsp;<a href="https://cvdesignr.com/p/5e415998a2cbb" target="_blank" rel="noreferrer">Télécharger mon cv en pdf</a></p>
+                        <p>{ moncv.titre_email }&nbsp;{ moncv.email }</p>
+                        <p>{ moncv.titre_addr }&nbsp;{ moncv.addr }</p>
+                        <p><FontAwesomeIcon icon={faFilePdf} />&nbsp;<a href="https://cvdesignr.com/p/5e415998a2cbb" target="_blank" rel="noreferrer">{ moncv.pdf }</a></p>
                     </div>
                 </div>
                 <div className="desc" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(parcours.desc) }}>
@@ -26,39 +27,38 @@ const cv = () => {
         </div>
         <hr />
         <div className="parcours">
-            <span className="title">Mes expériences</span>
+            <span className="title">{ moncv.titre_xp }</span>
             <ul>
                 <li>
-                2020 Développeur web <br />
-                <span className="details">Développeur web chez Slaask: www.xenoapp.com. Conception de features sur les chatbox.</span>
+                { moncv.titre_xpxeno }<br />
+                <span className="details">{ moncv.xpxeno }</span>
                 </li>
                 <li>
-                2019 Développeur web stagiaire<br />
-                <span className="details">Stagiaire en développement web chez Slaask.</span>
+                { moncv.titre_xpxenostage }<br />
+                <span className="details">{ moncv.xpxenostage }</span>
                 </li>
                 <li>
-                2016-2018 Gérant de Alfa Services<br />
-                <span className="details">Entreprise de formations technique à destination des professionnels.</span>
+                { moncv.titre_as }<br />
+                <span className="details">{ moncv.as }</span>
                 </li>
                 <li>
-                2011-2015 Développeur web PHP<br />
-                <span className="details">Développeur web PHP à Trenois Decamps. Création du site www.trenois.com, frontend et backend en php/mysql. Création également du site intranet et création du site de recrutement www.recrutement-trenois.com</span>
+                { moncv.titre_td }<br />
+                <span className="details">{ moncv.td }</span>
                 </li>
                 <li>
-                2013-2017 Coordinateur de région<br />
-                <span className="details">Co-délégué régional pour un mouvement d'initiative citoyenne, dans la région Haut-de-France et correspondant presse.</span>
+                { moncv.titre_nc }<br />
+                <span className="details">{ moncv.titre_nc }</span>
                 </li>
                 <li>
-                2010-2012 Cours et dépannage Informatique.<br />
-                <span className="details">Cours d'informatique à domicile, à l'intention des seniors et dépannage chez les particuliers.</span>
+                { moncv.titre_cours }<br />
+                <span className="details">{ moncv.cours }</span>
                 </li>
             </ul>
             <br /><br />
-            <span className="title">Mes formations</span>
+            <span className="title">{ moncv.titre_formations }</span>
             <ul>
-                <li>2019 Développeur Web Javascript : Wild Code School de Lille<br />
-                <span className="details">Apprentissage de Javascript, de Node.Js et de React.Js.
-Conception de sites internets dans le cadre des projets professionnels, réalisés en équipe via l'intégration des méthodes Agiles de gestion de projet.</span>
+                <li>{ moncv.titre_wcs }<br />
+                <span className="details">{ moncv.wcs}</span>
                 </li>
             </ul>
 
