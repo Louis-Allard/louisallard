@@ -18,7 +18,7 @@
 
     .main-menu {
         background: $color-3;
-        border-right: 1px solid $color-1;
+        border-right: 1px solid $color-3;
         position:absolute;
         top: 0;
         bottom: 0;
@@ -40,6 +40,7 @@
         position: relative;
         display: block;
         width: 250px;
+        line-height: 50px;
     }
 
     .main-menu li > a {
