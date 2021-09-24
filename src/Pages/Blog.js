@@ -1,5 +1,6 @@
 import React from 'react';
 import Menu from '../Components/Menu';
+import Head from '../Components/Head';
 import Title from '../Components/Title';
 import Footer from '../Components/Footer';
 import Post from '../Components/Post';
@@ -9,6 +10,7 @@ import { blog } from '../lng/fr.js'
 const Blog = () => {
     return (
         <div className="blog">
+            <Head title="Mon blog" />
             <Menu />
             <Title text="Mon blog" />
             <div className="data-container">

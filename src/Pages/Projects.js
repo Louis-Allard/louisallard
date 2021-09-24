@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from '../Components/Head';
 import Menu from '../Components/Menu';
 import Project from '../Components/Project';
 import Title from '../Components/Title';
@@ -14,6 +15,7 @@ import Footer from '../Components/Footer';
 const Projects = () => {
     return (
         <div className="projects">
+            <Head title="Mes projects" />
             <Menu />
             <Title text="Mes projets" />
             <div className="els">
