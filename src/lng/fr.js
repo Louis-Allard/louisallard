@@ -75,15 +75,6 @@ const moncv = {
     wcs: "Apprentissage de Javascript, de Node.Js et de React.Js.Conception de sites internets dans le cadre des projets professionnels, réalisés en équipe via l'intégration des méthodes Agiles de gestion de projet."
 }
 
-const projects = {
-    project1: "",
-    project2: "",
-    project3: "",
-    project4: "",
-    project5: "",
-    project6: ""
-}
-
 const menu = {
     accueil: "Accueil",
     apropos: "A propos",
