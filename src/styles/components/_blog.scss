@@ -1,7 +1,11 @@
 .blog {
     margin-left: $margin-menu;
     .data-container {
-        margin-top: $margin-container;        ;
+        margin-top: $margin-container;
+    }
+
+    p {
+        margin-bottom: 1.5rem;
     }
 }
 

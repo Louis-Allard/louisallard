@@ -14,6 +14,7 @@ const Blog = () => {
             <Menu />
             <Title text="Mon blog" />
             <div className="data-container">
+            <Post title={ blog.title09 } content={ blog.content09 }  date={ blog.date09 } />
             <Post title={ blog.title08 } content={ blog.content08 }  date={ blog.date08 } />
             <Post title={ blog.title07 } content={ blog.content07 }  date={ blog.date07 } />
             <Post title={ blog.title06 } content={ blog.content06 }  date={ blog.date06 } />
