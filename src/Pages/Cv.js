@@ -1,5 +1,6 @@
 import React from 'react';
 import DOMPurify from 'dompurify';
+import Head from '../Components/Head';
 import { moncv } from '../lng/fr.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFilePdf } from '@fortawesome/free-solid-svg-icons'
@@ -11,6 +12,7 @@ import Footer from '../Components/Footer';
 const cv = () => {
     return (
         <div className="cv">
+            <Head title="Mon parcours" />
             <Title text="Mon Parcours" />
             <div className="data-container">
             <div className="whoami">

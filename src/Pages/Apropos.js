@@ -1,6 +1,7 @@
 import React from 'react';
 import { apropos } from '../lng/fr.js';
 import Menu from '../Components/Menu';
+import Head from '../Components/Head';
 import Title from '../Components/Title';
 import react from '../assets/about/react.png'; 
 import sass from '../assets/about/sass.png'
@@ -8,6 +9,7 @@ import sass from '../assets/about/sass.png'
 const Apropos = () => {
     return (
         <div className="apropos">
+            <Head title="A propos" />
            <Menu />
             <Title text="A propos de ce site" />
             <div className="data-container">

@@ -1,6 +1,7 @@
 import React from 'react';
 import DOMPurify from 'dompurify';
 import Menu from '../Components/Menu';
+import Head from '../Components/Head';
 import Footer from '../Components/Footer';
 import Title from '../Components/Title';
 import { aboutme } from '../lng/fr.js';
@@ -28,6 +29,7 @@ const About = () => {
 
     return (
         <div className="about">
+            <Head title="A propos de moi" />
             <Menu />
             <Title text="A propos de moi" />
             <div className="content" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(aboutme.content) }} />
