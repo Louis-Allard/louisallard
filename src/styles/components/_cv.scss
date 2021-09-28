@@ -90,6 +90,7 @@
 
 @media (max-width: 600px) {
     .cv {
+	padding-right: $padding-small;
         .data-container {
             margin-top: 0;
             text-align: justify;

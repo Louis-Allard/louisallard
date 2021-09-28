@@ -23,6 +23,7 @@
 
 @media (max-width: 600px) {
     .projects {
+	padding-right: $padding-small;
         .els {
             margin-top: 0;
             display: grid;

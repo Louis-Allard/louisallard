@@ -109,6 +109,7 @@
 
 @media (max-width: 600px){
     .about {
+ 	padding-right: $padding-small;
         font-size: 1rem;
         .content {
             margin-top: 0;
