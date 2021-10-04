@@ -1,7 +1,7 @@
 
 const landing = {
     name:        "Louis Allard",
-    title:        "Développeur de solution",
+    title:        "Développeur de solutions",
 }
 
 const title = {
