@@ -21,6 +21,7 @@ const Blog = () => {
                 <Post title={ blog.title05 } content={ blog.content05 }  date={ blog.date05 } />
                 <Post title={ blog.title04 } content={ blog.content04 }  date={ blog.date04 } />
                 <Post title={ blog.title03 } content={ blog.content03 }  date={ blog.date03 } />
+                <iframe src="https://anchor.fm/lavienumerique/embed/episodes/Le-savoir--sa-transmission-e189hi1" height="102px" width="400px" frameborder="0" scrolling="no" title="lesavoirsatransmission"></iframe>
                 <Post title={ blog.title02 } content={ blog.content02 }  date={ blog.date02 } />
                 <iframe src="https://anchor.fm/lavienumerique/embed/episodes/Le-tltravail-e185ebs/a-a6kd2hi" height="102px" width="400px" frameborder="0" scrolling="no" title="lavienumerique"></iframe> 
                 <Post title={ blog.title01 } content={ blog.content01 }  date={ blog.date01 } />
