@@ -85,10 +85,10 @@ const menu = {
     projets: "Mes projets",
     blog: "Mon blog",
     site: "A propos de ce site",
-    podcast: "Podcsast La vie numérique"
+    podcast: "Podcast La vie numérique"
 }
 
 const podcast = {
-    content: "Le podcast La vie numérique vous parle de la vie d'un developpeur web. Outre ce site, vous retrouverez ce podcast sur spotify et youtube."
+    content: "Le podcast La vie numérique vous parle de la vie d'un developpeur web. Outre ce site, vous retrouverez ce podcast sur spotify et youtube. Ce podcast reprend en partie les articles de mon blog, et plus encore."
 }
 export { landing, title, aboutme,  blog, parcours, apropos, moncv, menu,podcast };
