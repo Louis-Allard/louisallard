@@ -1,0 +1,24 @@
+.podcasts {
+    .data-container {
+        margin-top: $margin-container;
+        margin-left: $margin-menu;
+        .links {
+            text-align: left;
+            cursor: pointer;
+            margin-bottom: 50px;
+            img {
+                width: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .podcasts {
+	padding-right: $padding-small;
+        .data-container {
+            margin-top: 0;
+            margin-left: $margin-menu;
+        }
+    }
+}
