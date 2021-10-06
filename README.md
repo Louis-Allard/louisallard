@@ -4,11 +4,10 @@ Nouveau site personnel
 
 ReactJS - JavaScript - SCSS 
 
-### Inspirations
+### Listen me
 
-http://demo.harnishdesign.net/html/simone/index.html
-
-https://codepen.io/yemon/pen/dzgmxJ
+Podcast "La vie numérique" sur spotify: https://urlz.fr/gA0O
+Podcast "La vie numérique" sur youtube: https://urlz.fr/gA0T
 
 ### Contact
 
