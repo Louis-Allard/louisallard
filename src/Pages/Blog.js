@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 import Menu from '../Components/Menu';
 import Head from '../Components/Head';
 import Title from '../Components/Title';
@@ -8,6 +9,8 @@ import { blog } from '../lng/fr.js'
 
 
 const Blog = () => {
+    ReactGA.initialize('UA-000000-01');
+    ReactGA.pageview(window.location.pathname + window.location.search);
     return (
         <div className="blog">
             <Head title="Mon blog" />

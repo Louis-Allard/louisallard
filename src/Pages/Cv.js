@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 import DOMPurify from 'dompurify';
 import Head from '../Components/Head';
 import { moncv } from '../lng/fr.js';
@@ -10,6 +11,8 @@ import { parcours } from '../lng/fr';
 import Footer from '../Components/Footer';
 
 const cv = () => {
+    ReactGA.initialize('UA-000000-01');
+    ReactGA.pageview(window.location.pathname + window.location.search);
     return (
         <div className="cv">
             <Head title="Mon parcours" />

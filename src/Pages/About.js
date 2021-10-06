@@ -23,9 +23,11 @@ import redux from '../assets/about/redux.png';
 import vuejs from '../assets/about/vuejs.png';
 import react from '../assets/about/react.png';
 import sass from '../assets/about/sass.png';
-
+import ReactGA from 'react-ga';
 
 const About = () => {
+    ReactGA.initialize('UA-000000-01');
+    ReactGA.pageview(window.location.pathname + window.location.search);
 
     return (
         <div className="about">

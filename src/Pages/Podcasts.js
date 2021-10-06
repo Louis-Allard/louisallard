@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 import { NavLink } from 'react-router-dom';
 import Podcast from '../Components/Podcast'
 import Title from '../Components/Title'
@@ -9,6 +10,8 @@ import spotify from '../assets/podcasts/spotify.png';
 import youtube from '../assets/podcasts/youtube.png';
 
 const Podcasts = () => {
+    ReactGA.initialize('UA-000000-01');
+    ReactGA.pageview(window.location.pathname + window.location.search);
     return (
         <div className="podcasts">
             <Head title="La vie numérique" />
