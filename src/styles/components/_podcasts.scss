@@ -1,6 +1,15 @@
 .podcasts {
     .data-container {
         margin-top: $margin-container;
+        margin-left: $margin-menu;
+        .links {
+            text-align: left;
+            cursor: pointer;
+            margin-bottom: 50px;
+            img {
+                width: 30px;
+            }
+        }
     }
 }
 
