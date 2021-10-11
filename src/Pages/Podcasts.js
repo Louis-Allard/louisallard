@@ -21,12 +21,9 @@ const Podcasts = () => {
             <div className="links">
                 <p>{ podcast.content }</p> <br />
                 <span><b>Lien spotify: </b></span>
-                <NavLink exact to="https://open.spotify.com/show/49z70drWXghOH0fysQKpxN?si=ZNe94RiuQ0aIZ_yZcPh_PQ&dl_branch=1" activeClassName="nav-active">
-                    <img src={spotify} alt="spotify" title="lien vers spotify" />&nbsp;&nbsp;
-                </NavLink>   
-                <NavLink exact to="https://www.youtube.com/channel/UCNhCqqmrDDYOy3pNdXTZ-Yg/videos" activeClassName="nav-active"> 
-                <span><b>Lien youtube: </b></span><img src={youtube} alt="youtube" title="lien vers youtube" />
-                </NavLink>
+                <a href="https://open.spotify.com/show/49z70drWXghOH0fysQKpxN?si=ZNe94RiuQ0aIZ_yZcPh_PQ&dl_branch=1" target="_blank" rel="noreferrer"><img src={spotify} alt="spotify" title="lien vers spotify" /></a>
+                    &nbsp;&nbsp; <span><b>Lien Youtube: </b></span>
+                    <a href="https://www.youtube.com/channel/UCNhCqqmrDDYOy3pNdXTZ-Yg/videos" target="_blank" rel="noreferrer"><img src={youtube} alt="youtube" title="lien vers youtube" /></a>
             </div>
             <Podcast link="https://anchor.fm/lavienumerique/embed/episodes/4-Comment-se-crer-son-premier-rseau-e18kepc" height="180px" width="800px" title="le savoir" frameborder="no" scrolling="no" />
             <Podcast link="https://anchor.fm/lavienumerique/embed/episodes/3-Comment-transformer-lessai-e18efei" height="180px" width="800px" title="le savoir" frameborder="no" scrolling="no" />
