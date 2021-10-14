@@ -25,6 +25,7 @@ const Podcasts = () => {
                     &nbsp;&nbsp; <span><b>Lien Youtube: </b></span>
                     <a href="https://www.youtube.com/channel/UCNhCqqmrDDYOy3pNdXTZ-Yg/videos" target="_blank" rel="noreferrer"><img src={youtube} alt="youtube" title="lien vers youtube" /></a>
             </div>
+            <Podcast link="https://anchor.fm/lavienumerique/embed/episodes/5---Grer-au-mieux-le-tltravail-e18p020" height="180px" width="800px" title="gérer le télétravail" frameborder="no" scrolling="no" />
             <Podcast link="https://anchor.fm/lavienumerique/embed/episodes/4-Comment-se-crer-son-premier-rseau-e18kepc" height="180px" width="800px" title="le savoir" frameborder="no" scrolling="no" />
             <Podcast link="https://anchor.fm/lavienumerique/embed/episodes/3-Comment-transformer-lessai-e18efei" height="180px" width="800px" title="le savoir" frameborder="no" scrolling="no" />
             <Podcast link="https://anchor.fm/lavienumerique/embed/episodes/Le-savoir--sa-transmission-e189hi1" height="180px" width="800px" title="le savoir" frameborder="no" scrolling="no" />

@@ -18,7 +18,9 @@ const Blog = () => {
             <Title text="Mon blog" />
             <div className="data-container">
                 <Post title={ blog.title09 } content={ blog.content09 }  date={ blog.date09 } />
+                <iframe src="https://anchor.fm/lavienumerique/embed/episodes/5---Grer-au-mieux-le-tltravail-e18p020" height="102px" width="400px" frameborder="0" scrolling="no" title="transformer lessai"></iframe>
                 <Post title={ blog.title08 } content={ blog.content08 }  date={ blog.date08 } />
+                <iframe src="https://anchor.fm/lavienumerique/embed/episodes/4-Comment-se-crer-son-premier-rseau-e18kepc" height="102px" width="400px" frameborder="0" scrolling="no" title="transformer lessai"></iframe>
                 <Post title={ blog.title07 } content={ blog.content07 }  date={ blog.date07 } />
                 <Post title={ blog.title06 } content={ blog.content06 }  date={ blog.date06 } />
                 <Post title={ blog.title05 } content={ blog.content05 }  date={ blog.date05 } />
