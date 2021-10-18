@@ -17,6 +17,7 @@ const Blog = () => {
             <Menu />
             <Title text="Mon blog" />
             <div className="data-container">
+            <iframe src="https://anchor.fm/lavienumerique/embed/episodes/6-Personne-ne-me-rpond--mon-cv-e18uma5" height="102px" width="400px" frameborder="0" scrolling="no" title="personne ne repond a mon cv"></iframe>
                 <Post title={ blog.title09 } content={ blog.content09 }  date={ blog.date09 } />
                 <iframe src="https://anchor.fm/lavienumerique/embed/episodes/5---Grer-au-mieux-le-tltravail-e18p020" height="102px" width="400px" frameborder="0" scrolling="no" title="transformer lessai"></iframe>
                 <Post title={ blog.title08 } content={ blog.content08 }  date={ blog.date08 } />
