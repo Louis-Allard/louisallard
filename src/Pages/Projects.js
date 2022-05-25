@@ -10,6 +10,7 @@ import p_mazerunner from '../assets/projetcs/p_mazerunner.png'
 import p_xeno from '../assets/projetcs/p_xeno.png'
 import p_trenois from '../assets/projetcs/p_td.png'
 import p_watcha from '../assets/projetcs/p_watcha.png'
+import p_couscous from '../assets/projetcs/p_couscous.png'
 import p_racines from '../assets/projetcs/p_racines.png'
 import Footer from '../Components/Footer';
 
@@ -23,6 +24,7 @@ const Projects = () => {
             <Menu />
             <Title text="Mes projets" />
             <div className="els">
+                    <Project src={ p_couscous } alt="project 8" title="Le Bar a Couscous" name="Le Bar a couscous" link="http://www.lebaracouscous.fr" desc="Site internet d'un client qui a ouvert un établissement de vente de couscous a emporter.<br /><br /><p>Le site est réalisé en ReactJS</p>" />
                     <Project src={ p_racines } alt="project 1" title="Des racines et des mots" name="Des racines et des mots" link="http://www.desracinesetdesmots.com/" desc="Site de l'association Des Racines et des Mots. Son objectif majeur est la création, la promotion, le développement et l’organisation d’un prix littéraire doté, relatif à la littérature de l’exil ou du questionnement identitaire.<br /><br /><p>Le site est réalisé sur une base worpress</p>" />
                     <Project src={ p_world } alt="project 2" title="React Wold" name="React Wold" link="https://flamboyant-brattain-ba00b9.netlify.app/" desc="Une consommation d'API me permet de récupérer des drapeaux de pays avec quelques informations complémentaires. Un peu de JavaScript permet de trier l'affichage.<br /><br /><p>Projet réalisé en ReactJS avec une consommation d'API.</p>" />
                     <Project src={ p_ballons } alt="project 3" title="Ballons" name="Ballons" link="https://github.com/Louis-Allard/ballon" desc="Ballons est un petit jeux qui consiste a gérer l'avancé de son personnage afin qu'il aille le plus loins piossible, tout en évitant les obstacles. Le jeux offre une difficultés évolutive.<br /><br /><p>Le jeux est créé en python.</p>" />
