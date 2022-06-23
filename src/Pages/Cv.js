@@ -34,6 +34,10 @@ const cv = () => {
         <div className="parcours">
             <span className="title">{ moncv.titre_xp }</span>
             <ul>
+            <li>
+                { moncv.titre_xpinde }<br />
+                <span className="details">{ moncv.xpinde }</span>
+                </li>
                 <li>
                 { moncv.titre_xpxeno }<br />
                 <span className="details">{ moncv.xpxeno }</span>
