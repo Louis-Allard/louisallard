@@ -2,7 +2,8 @@
 
 ### Tech
 
-ReactJS - JavaScript - SCSS - 
+ReactJS - JavaScript - SCSS 
+
 Podcast host in anchor website
 
 ### Listen me
