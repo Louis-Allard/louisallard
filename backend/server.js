@@ -22,8 +22,8 @@ app.get('/', function (req, res) {
 const contactEmail = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: "l.allard.mail@gmail.com",
-    pass: "LnxQ2NKbF83jhDh",
+    user: "@gmail.com",
+    pass: "",
   },
 });
 
