@@ -87,7 +87,8 @@ const menu = {
     projets: "Mes projets",
     blog: "Mon blog",
     site: "A propos de ce site",
-    podcast: "Podcast La vie numérique"
+    podcast: "Podcast La vie numérique",
+    contact: "Me contacter"
 }
 
 const podcast = {
