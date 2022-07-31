@@ -3,6 +3,7 @@ import ReactGA from 'react-ga';
 import Head from '../Components/Head';
 import Title from '../Components/Title';
 import Footer from '../Components/Footer';
+import {contact} from '../lng/fr';
 
 const Contact = () => {
     const [status, setStatus] = useState("Submit");
@@ -36,15 +37,15 @@ const Contact = () => {
             <div className='data-container'>
     <form onSubmit={handleSubmit}>
       <div>
-        <label htmlFor="name">Name:</label>
+        <label htmlFor="name">{ contact.label_name }</label>
         <input type="text" id="name" required />
       </div>
       <div>
-        <label htmlFor="email">Email:</label>
+        <label htmlFor="email">{ contact.label_email }</label>
         <input type="email" id="email" required />
       </div>
       <div>
-        <label htmlFor="message">Message:</label>
+        <label htmlFor="message">{ contact.label_msg }</label>
         <textarea id="message" required />
       </div>
       <button type="submit">{status}</button>

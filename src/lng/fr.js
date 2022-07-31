@@ -94,4 +94,11 @@ const menu = {
 const podcast = {
     content: "Le podcast La vie numérique vous parle de la vie d'un developpeur web. Outre ce site, vous retrouverez ce podcast sur spotify et youtube. N'oubliez pas de vous abonner afin de ne rien rater des emissions à venir. Ce podcast reprend en partie les articles de mon blog, et plus encore."
 }
-export { landing, title, aboutme,  blog, parcours, apropos, moncv, menu,podcast };
+
+const contact = {
+    label_name: "Nom",
+    label_email: "Email",
+    label_msg: "Message",
+    btn_submit: "Envoyer"
+}
+export { landing, title, aboutme,  blog, parcours, apropos, moncv, menu,podcast, contact };
