@@ -21,20 +21,17 @@ app.get('/', function (req, res) {
 
 // Nodemailer
 const contactEmail = nodemailer.createTransport({
-  type: 'OAuth2',
   service: 'protonmail',
   host: process.env.MAIL_HOST,
   port: 465,
   secure: true, // true for 465, false the other ports
   auth: {
-    xoauth2: xoauth2.createXOAuth2Generator({
     user: process.env.MAIL_USER,
     pass: process.env.MAIL_PWD,
-    })
-  },
-  tls: {
-    rejectUnauthorized: false
-}
+    },
+    tls : { 
+      rejectUnauthorized: false 
+    }
 });
 
 contactEmail.verify((error) => {
