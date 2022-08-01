@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import ReactGA from "react-ga";
 import Head from "../Components/Head";
 import Title from "../Components/Title";
@@ -6,14 +6,15 @@ import Footer from "../Components/Footer";
 import { contact } from "../lng/fr";
 
 const Contact = () => {
-  /*     const [status, setStatus] = useState("Submit");
+   const [status, setStatus] = useState("Submit");
     const handleSubmit = async (e) => {
   e.preventDefault();
   setStatus("Sending...");
-  const { name, email, message } = e.target.elements;
+  const { name, email, phone, message } = e.target.elements;
   let details = {
     name: name.value,
     email: email.value,
+    phone: phone.value,
     message: message.value,
   };
   let response = await fetch("http://localhost:3000/contact", {
@@ -26,7 +27,7 @@ const Contact = () => {
   setStatus("Submit");
   let result = await response.json();
   alert(result.status);
-}; */
+}; 
 
   ReactGA.initialize("UA-000000-01");
   ReactGA.pageview(window.location.pathname + window.location.search);
@@ -35,46 +36,31 @@ const Contact = () => {
       <Head title="Me contacter" />
       <Title text="Me contacter" />
       <div className="data-container">
-        {/*     <form onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor="name">{ contact.label_name }</label>
-        <input type="text" id="name" required />
-      </div>
-      <div>
-        <label htmlFor="email">{ contact.label_email }</label>
-        <input type="email" id="email" required />
-      </div>
-      <div>
-        <label htmlFor="message">{ contact.label_msg }</label>
-        <textarea id="message" required />
-      </div>
-      <button type="submit">{status}</button>
-    </form> */}
-        <div class="form-style-3">
-          <form>
+        <div className="form-style-3">
+          <form  onSubmit={handleSubmit}>
             <fieldset>
               <legend>{contact.title}</legend>
-              <label for="field1">
-                <span>{contact.label_name} <span class="required">*</span></span>
+              <label htmlFor="name">
+                <span>{contact.label_name} <span className="required">*</span></span>
               </label>
-                <input type="text" class="input-field" name="field1" value="" required />
-              <label for="field2">
-                <span>{contact.label_email} <span class="required">*</span></span>
+                <input type="text" className="input-field" name="name" defaultValue="" required />
+              <label htmlFor="email">
+                <span>{contact.label_email} <span className="required">*</span></span>
               </label>
                 <input
                   type="email"
-                  class="input-field"
-                  name="field2"
-                  value=""
+                  className="input-field"
+                  name="email"
+                  defaultValue=""
                   required
                 />
-              <label for="field3">
+              <label htmlFor="phone">
                 <span>{contact.label_phone} </span>
-                <input type="text" class="input-field" name="field3" value="" />
+                <input type="text" className="input-field" name="phone" defaultValue="" />
               </label>
-              <label for="field4">
+              <label htmlFor="field4">
                 <span>{contact.label_object} </span>
-                <select name="field4" class="select-field">
+                <select name="field4" className="select-field">
                   <option value="obj1">{contact.label_object1}</option>
                   <option value="obj2">{contact.label_object2}</option>
                   <option value="obj3">
@@ -85,15 +71,15 @@ const Contact = () => {
             </fieldset>
             <fieldset>
               <legend>{contact.label_msg} </legend>
-              <label for="field6">
+              <label htmlFor="field6">
                 <span>
-                  {contact.label_name} <span class="required">*</span>
+                  {contact.label_name} <span className="required">*</span>
                 </span>
-                <textarea name="field6" class="textarea-field"></textarea>
+                <textarea name="field6" className="textarea-field"></textarea>
               </label>
               <label>
                 <span> </span>
-                <input type="submit" value="Submit" />
+                <input type="submit" value="Submit" /> {status}
               </label>
             </fieldset>
           </form>
