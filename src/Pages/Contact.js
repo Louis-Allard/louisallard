@@ -55,22 +55,19 @@ const Contact = () => {
             <fieldset>
               <legend>{contact.title}</legend>
               <label for="field1">
-                <span>
-                  {contact.label_name} <span class="required">*</span>
-                </span>
-                <input type="text" class="input-field" name="field1" value="" />
+                <span>{contact.label_name} <span class="required">*</span></span>
               </label>
+                <input type="text" class="input-field" name="field1" value="" required />
               <label for="field2">
-                <span>
-                  {contact.label_email} <span class="required">*</span>
-                </span>
+                <span>{contact.label_email} <span class="required">*</span></span>
+              </label>
                 <input
                   type="email"
                   class="input-field"
                   name="field2"
                   value=""
+                  required
                 />
-              </label>
               <label for="field3">
                 <span>{contact.label_phone} </span>
                 <input type="text" class="input-field" name="field3" value="" />
