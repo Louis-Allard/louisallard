@@ -2,5 +2,89 @@
     margin-left: $margin-menu;
     .data-container {
         margin-top: $margin-container;
+.form-style-3{
+    margin: auto;
+	max-width: 850px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.form-style-3 label{
+	display:block;
+	margin-bottom: 10px;
+}
+.form-style-3 label > span{
+	float: left;
+	width: 175px;
+	color: $color-5;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #fff;
+}
+.form-style-3 fieldset{
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	margin: 0px 0px 10px 0px;
+	border: 1px solid #FFD2D2;
+	padding: 20px;
+	background: #FFF4F4;
+	box-shadow: inset 0px 0px 15px $color-5;
+	-moz-box-shadow: inset 0px 0px 15px $color-5;
+	-webkit-box-shadow: inset 0px 0px 15px $color-5;
+}
+.form-style-3 fieldset legend{
+	color: $color-5;
+	border-top: 1px solid $color-7;
+	border-left: 1px solid $color-7;
+	border-right: 1px solid $color-7;
+	border-radius: 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+	-moz-border-radius: 5px 5px 0px 0px;
+	background: #FFF4F4;
+	padding: 0px 8px 3px 8px;
+	box-shadow: -0px -1px 2px $color-8;
+	-moz-box-shadow:-0px -1px 2px $color-8;
+	-webkit-box-shadow:-0px -1px 2px $color-8;
+	font-weight: normal;
+}
+.form-style-3 textarea{
+	width:250px;
+	height:100px;
+}
+.form-style-3 input[type=text],
+.form-style-3 input[type=email],
+.form-style-3 select, 
+.form-style-3 textarea{
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border: 1px solid $color-7;
+	outline: none;
+	color: $color-3;
+	padding: 5px 8px 5px 8px;
+	box-shadow: inset 1px 1px 4px $color-8;
+	-moz-box-shadow: inset 1px 1px 4px $color-8;
+	-webkit-box-shadow: inset 1px 1px 4px $color-8;
+	background: #FFEFF6;
+	width:50%;
+}
+.form-style-3  input[type=submit],
+.form-style-3  input[type=button]{
+	background: $color-5;
+	border: 1px solid $color-6;
+	padding: 5px 15px 5px 15px;
+	color: $color-7;
+	box-shadow: inset -1px -1px 3px $color-6;
+	-moz-box-shadow: inset -1px -1px 3px $color-6;
+	-webkit-box-shadow: inset -1px -1px 3px $color-6;
+	border-radius: 3px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;	
+	font-weight: bold;
+}
+.required{
+	color:red;
+	font-weight:normal;
+}
     }
+
 }
