@@ -96,8 +96,14 @@ const podcast = {
 }
 
 const contact = {
+    title: "Contactez-moi",
     label_name: "Nom",
     label_email: "Email",
+    label_phone: "Téléphone",
+    label_object: "Objet du mail",
+    label_object1: "Demande de devis",
+    label_object2: "Demande de renseignement",
+    label_object3: "AUtres",
     label_msg: "Message",
     btn_submit: "Envoyer"
 }
