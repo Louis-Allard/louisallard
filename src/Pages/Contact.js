@@ -1,12 +1,12 @@
-import React, {useState} from 'react';
+import React from 'react';
 import ReactGA from 'react-ga';
 import Head from '../Components/Head';
 import Title from '../Components/Title';
 import Footer from '../Components/Footer';
-import {contact} from '../lng/fr';
+// import {contact} from '../lng/fr';
 
 const Contact = () => {
-    const [status, setStatus] = useState("Submit");
+/*     const [status, setStatus] = useState("Submit");
     const handleSubmit = async (e) => {
   e.preventDefault();
   setStatus("Sending...");
@@ -26,7 +26,7 @@ const Contact = () => {
   setStatus("Submit");
   let result = await response.json();
   alert(result.status);
-};
+}; */
 
     ReactGA.initialize('UA-000000-01');
     ReactGA.pageview(window.location.pathname + window.location.search);
@@ -35,7 +35,7 @@ const Contact = () => {
             <Head title="Me contacter" />
             <Title text="Me contacter" />
             <div className='data-container'>
-    <form onSubmit={handleSubmit}>
+{/*     <form onSubmit={handleSubmit}>
       <div>
         <label htmlFor="name">{ contact.label_name }</label>
         <input type="text" id="name" required />
@@ -49,7 +49,25 @@ const Contact = () => {
         <textarea id="message" required />
       </div>
       <button type="submit">{status}</button>
-    </form>
+    </form> */}
+    <div class="form-style-3">
+<form>
+<fieldset><legend>Personal</legend>
+<label for="field1"><span>Name <span class="required">*</span></span><input type="text" class="input-field" name="field1" value="" /></label>
+<label for="field2"><span>Email <span class="required">*</span></span><input type="email" class="input-field" name="field2" value="" /></label>
+<label for="field3"><span>Phone <span class="required">*</span></span><input type="text" class="input-field" name="field3" value="" /></label>
+<label for="field4"><span>Subject</span><select name="field4" class="select-field">
+<option value="Appointment">Appointment</option>
+<option value="Interview">Interview</option>
+<option value="Regarding a post">Regarding a post</option>
+</select></label>
+</fieldset>
+<fieldset><legend>Message</legend>
+<label for="field6"><span>Message <span class="required">*</span></span><textarea name="field6" class="textarea-field"></textarea></label>
+<label><span> </span><input type="submit" value="Submit" /></label>
+</fieldset>
+</form>
+</div>
     </div>
       <Footer />
         </div>
