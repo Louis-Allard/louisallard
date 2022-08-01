@@ -21,7 +21,7 @@ app.get('/', function (req, res) {
 
 // Nodemailer
 const contactEmail = nodemailer.createTransport({
-  service: 'protonmail',
+  service: 'ovh',
   host: process.env.MAIL_HOST,
   port: 465,
   secure: true, // true for 465, false the other ports

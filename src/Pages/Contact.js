@@ -6,10 +6,10 @@ import Footer from "../Components/Footer";
 import { contact } from "../lng/fr";
 
 const Contact = () => {
-   const [status, setStatus] = useState("Submit");
-    const handleSubmit = async (e) => {
+  const [status, setStatus] = useState("Envoyé");
+  const handleSubmit = async (e) => {
   e.preventDefault();
-  setStatus("Sending...");
+  setStatus("En cours d'envoi...");
   const { name, email, phone, message } = e.target.elements;
   let details = {
     name: name.value,
@@ -24,6 +24,7 @@ const Contact = () => {
     },
     body: JSON.stringify(details),
   });
+
   setStatus("Submit");
   let result = await response.json();
   alert(result.status);
@@ -71,11 +72,11 @@ const Contact = () => {
             </fieldset>
             <fieldset>
               <legend>{contact.label_msg} </legend>
-              <label htmlFor="field6">
+              <label htmlFor="message">
                 <span>
                   {contact.label_name} <span className="required">*</span>
                 </span>
-                <textarea name="field6" className="textarea-field"></textarea>
+                <textarea name="message" className="textarea-field"></textarea>
               </label>
               <label>
                 <span> </span>
