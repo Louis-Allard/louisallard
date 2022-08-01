@@ -6,8 +6,8 @@ import Footer from "../Components/Footer";
 import { contact } from "../lng/fr";
 
 const Contact = () => {
-   const [status, setStatus] = useState("Envoyé");
-    const handleSubmit = async (e) => {
+  const [status, setStatus] = useState("Envoyé");
+  const handleSubmit = async (e) => {
   e.preventDefault();
   setStatus("En cours d'envoi...");
   const { name, email, phone, message } = e.target.elements;
